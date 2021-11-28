@@ -4,15 +4,17 @@
   "packageManager": "yarn@3.1.1",
   "private": true,
   "scripts": {
+    "postinstall": "husky install",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "serve": "yarn dlx serve -s build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --verbose --coverage --watchAll=false",
+    "test-watch": "react-scripts test --verbose --coverage --watchAll",
     "eject": "react-scripts eject",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint-all": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "format": "prettier --write '**/*.{js,ts,jsx,tsx,json,scss,css,html,md,yml}'"
+    "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
+    "lint-fix": "eslint --fix 'src/**/*.{js,ts,jsx,tsx}'",
+    "lint-all": "eslint '**/*.{js,ts,jsx,tsx}'",
+    "format": "prettier --write '**/*.{js,ts,jsx,tsx,json,css,scss,html,md,yml}'"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -56,6 +58,8 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-unicorn": "^39.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
     "typescript": "^4.5.2"
   }

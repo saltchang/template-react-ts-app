@@ -17,5 +17,10 @@
     "jsx": "react-jsx"
   },
   "include": ["src", "setupTests.ts"],
-  "exclude": [".eslintrc.js", ".prettierrc.js"]
+  "exclude": [
+    ".eslintrc.js",
+    ".prettierrc.js",
+    ".huskyrc.js",
+    ".lintstagedrc.js"
+  ]
 }

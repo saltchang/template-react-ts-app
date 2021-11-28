@@ -80,7 +80,12 @@ module.exports = {
       },
     },
     {
-      files: ['.eslintrc.js', '.prettierrc.js', 'babel.config.json'],
+      files: [
+        '.eslintrc.js',
+        '.prettierrc.js',
+        '.huskyrc.js',
+        '.lintstagedrc.js',
+      ],
       parser: '@babel/eslint-parser',
       rules: {
         'unicorn/prefer-module': 'off',
