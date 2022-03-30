@@ -16,8 +16,12 @@ module.exports = {
   },
   plugins: [
     '@typescript-eslint',
+    'jsx-a11y',
+    'prefer-arrow',
     'react',
     'react-hooks',
+    'react-hook-form',
+    'react-perf',
     'prettier',
     'jest',
     'unicorn',
@@ -28,14 +32,16 @@ module.exports = {
     'eslint:recommended', // eslint
     'plugin:@typescript-eslint/eslint-recommended', // typescript
     'plugin:@typescript-eslint/recommended', // typescript
+    'plugin:jsx-a11y/recommended', // jsx-ally
     'plugin:react/recommended', // react
+    'plugin:react-hook-form/recommended', // react
     'plugin:react-hooks/recommended', // react-hooks
+    'plugin:react-perf/recommended', // react
     'prettier', // prettier
     'plugin:prettier/recommended', // prettier
     'plugin:jest/recommended', // jest
     'plugin:unicorn/recommended', // unicorn
-    'plugin:import/errors', // import
-    'plugin:import/warnings', // import
+    'plugin:import/recommended', // import
     'plugin:import/typescript', // import
   ],
   rules: {
@@ -46,17 +52,6 @@ module.exports = {
     eqeqeq: ['error', 'smart'],
     'prefer-const': ['error'],
     'no-console': 'warn',
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      {
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: false,
-      },
-    ],
-    '@typescript-eslint/explicit-function-return-type': 'warn', // Consider using explicit annotations for object literals and function return types even when they can be inferred.
-    'no-empty': 'warn',
   },
   settings: {
     'import/resolver': {
@@ -75,9 +70,7 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
-      rules: {
-        'no-undef': 'off',
-      },
+      rules: {},
     },
     {
       files: [

@@ -1,25 +1,23 @@
-# react-ts-yarn-berry-app
+# template-react-ts-app
 
 [![License](https://img.shields.io/badge/license-MIT-a31f34)](./LICENSE)
 
-A project template for React, with TypeScript and Yarn v3.
+A project template for React, with TypeScript.
 
 ## Requirements
-
-- [Yarn Berry (v3)](https://yarnpkg.com/getting-started/install)
 
 ## Getting Started
 
 Clone this template:
 
 ```bash
-git clone https://github.com/saltchang/react-ts-yarn-berry-app.git
+git clone https://github.com/saltchang/template-react-ts-app.git
 ```
 
 Rename to your app's name:
 
 ```bash
-cp -r react-ts-yarn-berry-app <your-app>
+cp -r template-react-ts-app <your-app>
 cd <your-app>
 ```
 
@@ -27,10 +25,10 @@ Set up the project:
 
 ```bash
 # replace the project name to yours
-sed -i 's/react-ts-yarn-berry-app/<your-app>/g' package.json README.md yarn.lock
+sed -i 's/template-react-ts-app/<your-app>/g' package.json README.md package-lock.json
 
 # run this if you are on a BSD systems like macOS
-sed -i '.bak' 's/react-ts-yarn-berry-app/<your-app>/g' package.json README.md yarn.lock
+sed -i '.bak' 's/template-react-ts-app/<your-app>/g' package.json README.md package-lock.json
 ```
 
 You can also choose to reset the git repository (optional):
@@ -45,44 +43,44 @@ git init
 Install the dependencies:
 
 ```bash
-yarn
+npm install
 ```
 
 Start the development server:
 
 ```bash
-yarn start
+npm start
 ```
 
 Run test:
 
 ```bash
-yarn test
+npm run test
 ```
 
 Build the Production package:
 
 ```bash
-yarn build
+npm run build
 ```
 
 Run the Production package:
 
 ```bash
-yarn serve
+npm run serve
 ```
 
 Run lintting:
 
 ```bash
-yarn lint
+npm run lint
 
 # with fix
-yarn lint-fix
+npm run lint-fix
 ```
 
 Format documents:
 
 ```bash
-yarn format
+npm run format
 ```

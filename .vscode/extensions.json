@@ -7,7 +7,7 @@
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "foxundermoon.shell-format",
-    "irongeek.vscode-env",
+    "mikestead.dotenv",
     "yzhang.markdown-all-in-one"
   ]
 }

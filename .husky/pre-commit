@@ -4,9 +4,9 @@
 printf "\n"
 printf "=== Run test ===\n"
 printf "\n"
-yarn test
+npm run test
 printf "\n"
 printf "=== Run lint and format ===\n"
 printf "\n"
-yarn lint-staged
+npx lint-staged
 printf "\n"
